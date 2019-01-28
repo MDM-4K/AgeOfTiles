@@ -1,4 +1,4 @@
-﻿Log file open, 01/26/19 12:19:46
+﻿Log file open, 01/28/19 12:52:26
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: AgeofTiles
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 1.113881
+LogStats: Stats thread started at 1.085452
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +8:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.171s to configure plugins.
+LogStreaming: Display: Took  0.114s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -149,639 +149,525 @@ LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
 LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogStreaming: Display: Took  0.003s to delete old logs.
+LogStreaming: Display: Took  0.004s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.01.26-04.19.47:821][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.01.26-04.19.47:821][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:822][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:846][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:846][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.26-04.19.47:846][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.26-04.19.47:846][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:846][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.26-04.19.47:847][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.26-04.19.47:848][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.26-04.19.47:848][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.26-04.19.47:848][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.01.26-04.19.47:881][  0]LogHAL: Display: Platform has ~ 16 GB [17127763968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.01.26-04.19.47:882][  0]LogInit: Going up to parent DeviceProfile []
-[2019.01.26-04.19.47:882][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.01.26-04.19.47:882][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.01.26-04.19.47:883][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.01.26-04.19.47:889][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.01.26-04.19.47:889][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
-[2019.01.26-04.19.47:890][  0]LogInit: Computer: DESKTOP-DRGIK0M
-[2019.01.26-04.19.47:890][  0]LogInit: User: mdmur
-[2019.01.26-04.19.47:890][  0]LogInit: CPU Page size=4096, Cores=8
-[2019.01.26-04.19.47:890][  0]LogInit: High frequency timer resolution =3.314084 MHz
-[2019.01.26-04.19.47:891][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2019.01.26-04.19.47:891][  0]LogMemory: Platform Memory Stats for Windows
-[2019.01.26-04.19.47:891][  0]LogMemory: Process Physical Memory: 106.21 MB used, 106.21 MB peak
-[2019.01.26-04.19.47:891][  0]LogMemory: Process Virtual Memory: 91.49 MB used, 91.49 MB peak
-[2019.01.26-04.19.47:891][  0]LogMemory: Physical Memory: 9341.96 MB used,  6992.35 MB free, 16334.31 MB total
-[2019.01.26-04.19.47:891][  0]LogMemory: Virtual Memory: 4681.03 MB used,  134213048.00 MB free, 134217728.00 MB total
-[2019.01.26-04.19.48:123][  0]LogInit: Using OS detected language (en-US).
-[2019.01.26-04.19.48:123][  0]LogInit: Using OS detected locale (en-AU).
-[2019.01.26-04.19.48:124][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.01.26-04.19.48:747][  0]LogStreaming: Display: Took  0.624s to InitEngineTextLocalization.
-[2019.01.26-04.19.48:748][  0]LogInit: Setting process to per monitor DPI aware
-[2019.01.26-04.19.48:910][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.01.26-04.19.48:910][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.01.26-04.19.52:115][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2019.01.26-04.19.52:115][  0]LogD3D11RHI: D3D11 adapters:
-[2019.01.26-04.19.52:209][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070 Ti' (Feature Level 11_0)
-[2019.01.26-04.19.52:209][  0]LogD3D11RHI:       8080/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
-[2019.01.26-04.19.52:212][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.01.26-04.19.52:212][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.01.26-04.19.52:212][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.01.26-04.19.52:225][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.01.26-04.19.52:225][  0]LogD3D11RHI:     GPU DeviceId: 0x1b82 (for the marketing name, search the web for "GPU Device Id")
-[2019.01.26-04.19.52:225][  0]LogWindows: EnumDisplayDevices:
-[2019.01.26-04.19.52:225][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070 Ti' (P:1 D:1)
-[2019.01.26-04.19.52:226][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:1)
-[2019.01.26-04.19.52:226][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:1)
-[2019.01.26-04.19.52:226][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
-[2019.01.26-04.19.52:227][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.01.26-04.19.52:227][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070 Ti
-[2019.01.26-04.19.52:227][  0]LogD3D11RHI:   Driver Version: 417.22 (internal:25.21.14.1722, unified:417.22)
-[2019.01.26-04.19.52:227][  0]LogD3D11RHI:      Driver Date: 11-29-2018
-[2019.01.26-04.19.52:227][  0]LogRHI: Texture pool is 5656 MB (70% of 8080 MB)
-[2019.01.26-04.19.52:290][  0]LogD3D11RHI: Async texture creation enabled
-[2019.01.26-04.19.52:343][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.01.26-04.19.52:874][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.01.26-04.19.52:893][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.01.26-04.19.52:913][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.01.26-04.19.52:933][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.01.26-04.19.52:961][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.01.26-04.19.52:986][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.01.26-04.19.53:008][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.01.26-04.19.53:032][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.01.26-04.19.53:044][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:171][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.01.26-04.19.53:175][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.01.26-04.19.53:263][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.26-04.19.53:263][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.01.26-04.19.53:300][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.26-04.19.53:300][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.01.26-04.19.53:320][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.01.26-04.19.53:340][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.01.26-04.19.53:359][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.01.26-04.19.53:449][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.01.26-04.19.53:522][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.26-04.19.53:522][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.01.26-04.19.53:522][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.01.26-04.19.53:716][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Intermediate/Shaders/WorkingDirectory/4432/).
-[2019.01.26-04.19.53:717][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mdmur/AppData/Local/Temp/UnrealShaderWorkingDir/4DEC720B48D45D8E732625A096062163/'.
-[2019.01.26-04.19.53:721][  0]LogXGEController: Cleaning working directory: C:/Users/mdmur/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.01.26-04.19.53:721][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.01.26-04.19.53:721][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.01.26-04.19.53:721][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.01.26-04.19.56:051][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: Loaded boot cache 0.19s 71MB C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.26-04.19.56:239][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.01.26-04.19.56:265][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.01.26-04.19.56:265][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.01.26-04.19.56:265][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.01.26-04.19.56:278][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mdmur/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.01.26-04.19.56:278][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.01.26-04.19.56:278][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.01.26-04.19.56:310][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.01.26-04.19.56:316][  0]LogSlate: Using FreeType 2.6.0
-[2019.01.26-04.19.56:339][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.01.26-04.19.56:732][  0]LogAssetRegistry: FAssetRegistry took 0.0402 seconds to start up
-[2019.01.26-04.19.57:225][  0]LogInit: Selected Device Profile: [Windows]
-[2019.01.26-04.19.57:601][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.01.26-04.19.57:619][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.01.26-04.19.57:620][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.01.26-04.19.57:620][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.01.26-04.19.57:620][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.01.26-04.19.57:683][  0]LogNetVersion: AgeofTiles 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2632728394)
-[2019.01.26-04.19.59:207][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.158412 seconds
-[2019.01.26-04.19.59:218][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.01.26-04.19.59:218][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
-[2019.01.26-04.19.59:218][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.01.26-04.20.03:501][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.01.26-04.20.03:519][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.01.26-04.20.04:506][  0]SourceControl: Source control is disabled
-[2019.01.26-04.20.04:506][  0]SourceControl: Source control is disabled
-[2019.01.26-04.20.04:515][  0]SourceControl: Source control is disabled
-[2019.01.26-04.20.04:520][  0]SourceControl: Source control is disabled
-[2019.01.26-04.20.04:852][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.01.26-04.20.04:981][  0]LogOcInput: OculusInput pre-init called
-[2019.01.26-04.20.05:213][  0]LogEngine: Initializing Engine...
-[2019.01.26-04.20.05:247][  0]LogHMD: Failed to initialize OpenVR with code 126
-[2019.01.26-04.20.05:251][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.26-04.20.05:251][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.26-04.20.05:252][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.26-04.20.05:252][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.26-04.20.05:816][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.01.26-04.20.05:864][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.01.26-04.20.05:906][  0]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
-[2019.01.26-04.20.05:935][  0]LogInit: FAudioDevice initialized.
-[2019.01.26-04.20.05:935][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.01.26-04.20.06:038][  0]LogDerivedDataCache: Saved boot cache 0.10s 71MB C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.01.26-04.20.06:043][  0]LogInit: Texture streaming: Enabled
-[2019.01.26-04.20.06:083][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.01.26-04.20.06:116][  0]LogInit: Transaction tracking system initialized
-[2019.01.26-04.20.06:180][  0]BlueprintLog: New page: Editor Load
-[2019.01.26-04.20.06:414][  0]LocalizationService: Localization service is disabled
-[2019.01.26-04.20.06:830][  0]LogLinker: Warning: Can't find file '/Game/TopDownBP/TopDownOverview'
-[2019.01.26-04.20.06:831][  0]LogLinker: Warning: Can't find file '/Game/TopDownBP/TopDownOverview'
-[2019.01.26-04.20.06:831][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/TopDownBP/TopDownOverview.TopDownOverview_C'
-[2019.01.26-04.20.07:462][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/' took 0.02s
-[2019.01.26-04.20.07:462][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.01.26-04.20.07:462][  0]LogCook: Display: Mobile HDR setting 1
-[2019.01.26-04.20.07:462][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.01.26-04.20.07:462][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.01.26-04.20.07:462][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.01.26-04.20.07:462][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.01.26-04.20.07:463][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.01.26-04.20.07:859][  0]SourceControl: Source control is disabled
-[2019.01.26-04.20.07:860][  0]Cmd: MAP LOAD FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.01.26-04.20.07:862][  0]LightingResults: New page: Lighting Build
-[2019.01.26-04.20.07:872][  0]MapCheck: New page: Map Check
-[2019.01.26-04.20.07:872][  0]LightingResults: New page: Lighting Build
-[2019.01.26-04.20.08:784][  0]LogAIModule: Creating AISystem for world RTSTestMap
-[2019.01.26-04.20.08:835][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.01.26-04.20.08:881][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.01.26-04.20.08:881][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.196ms to complete.
-[2019.01.26-04.20.08:882][  0]LogFileHelpers: Loading map 'RTSTestMap' took 1.022
-[2019.01.26-04.20.09:047][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.20.09:057][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.20.09:066][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.20.09:075][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.20.09:096][  0]LogCollectionManager: Loaded 0 collections in 0.002871 seconds
-[2019.01.26-04.20.09:139][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Collections/' took 0.01s
-[2019.01.26-04.20.09:139][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/Developers/mdmur/Collections/' took 0.01s
-[2019.01.26-04.20.09:139][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/Collections/' took 0.00s
-[2019.01.26-04.20.09:139][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2019.01.26-04.20.09:152][  0]LogContentBrowser: Native class hierarchy populated in 0.0117 seconds. Added 2651 classes and 620 folders.
-[2019.01.26-04.20.09:168][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.01.26-04.20.09:181][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:190][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:221][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:229][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:235][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:242][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:250][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:256][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:265][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:273][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:280][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:286][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:293][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:304][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:312][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:320][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:359][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:366][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:374][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:380][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:433][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:440][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:447][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:455][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:464][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:471][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.01.26-04.20.09:673][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.01.26-04.20.09:687][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2019.01.26-04.20.09:857][  0]LogSlate: Took 0.007176 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.01.26-04.20.09:867][  0]LogSlate: Took 0.007688 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.01.26-04.20.09:881][  0]LogSlate: Took 0.005724 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.01.26-04.20.10:054][  0]LogRenderer: Reallocating scene render targets to support 1208x600 Format 10 NumSamples 1 (Frame:1).
-[2019.01.26-04.20.10:214][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2019.01.26-04.20.10:214][  0]LogLoad: (Engine Initialization) Total time: 27.76 seconds
-[2019.01.26-04.20.10:214][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.01.26-04.20.10:279][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.01.26-04.20.10:321][  0]LogSlate: Took 0.006270 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.01.26-04.20.10:377][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2019.01.26-04.20.10:526][  4]LogAssetRegistry: Asset discovery search completed in 13.8173 seconds
-[2019.01.26-04.20.10:530][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000012 seconds (updated 0 objects)
-[2019.01.26-04.20.56:532][378]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.20.56:606][387]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2019.01.26-04.20.56:631][387]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.20.56:631][387]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.01.26-04.20.56:633][387]PIE: New page: PIE session: RTSTestMap (26 Jan 2019 8:20:56 pm)
-[2019.01.26-04.20.56:646][387]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
-[2019.01.26-04.20.56:686][387]LogPlayLevel: PIE: StaticDuplicateObject took: (0.039757s)
-[2019.01.26-04.20.56:687][387]LogAIModule: Creating AISystem for world RTSTestMap
-[2019.01.26-04.20.56:687][387]LogPlayLevel: PIE: World Init took: (0.000844s)
-[2019.01.26-04.20.56:687][387]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.041003s)
-[2019.01.26-04.20.56:744][387]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
-[2019.01.26-04.20.56:766][387]LogInit: FAudioDevice initialized.
-[2019.01.26-04.20.56:774][387]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.20.56:823][387]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.01.26-04.20.56:826][387]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.26-12.20.56
-[2019.01.26-04.20.56:827][387]LogWorld: Bringing up level for play took: 0.001355
-[2019.01.26-04.20.56:850][387]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
-[2019.01.26-04.20.56:871][387]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap -0.358
-[2019.01.26-04.20.56:873][387]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.20.56:920][387]LogRenderer: Reallocating scene render targets to support 1292x756 Format 10 NumSamples 1 (Frame:1).
-[2019.01.26-04.20.59:745][702]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 10 NumSamples 1 (Frame:317).
-[2019.01.26-04.21.14:611][464]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.21.25:861][802]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.01.26-04.21.25:866][802]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.21.25:899][802]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.01.26-04.21.25:899][802]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.21.25:960][803]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2019.01.26-04.21.47:421][356]LogSlate: Took 0.000250 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.01.26-04.21.47:428][356]LogAssetEditorManager: Opening Asset editor for DataTable /Game/AgeofTiles/Buildings_Data.Buildings_Data
-[2019.01.26-04.29.48:644][832]LogMetaData: Removing '/Game/AgeofTiles/Building_Enum.Building_Enum' ref from Metadata '/Game/AgeofTiles/NewUserDefinedEnum.PackageMetaData'
-[2019.01.26-04.29.48:670][832]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Building_Enum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Building_Enum.uasset" SILENT=true
-[2019.01.26-04.29.48:679][832]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Building_EnumCE6B9DAA41AC3524E5AE0FB996B25997.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Building_Enum.uasset'
-[2019.01.26-04.29.48:888][832]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.29.49:052][832]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD70D3A0D8435A1327017541A2761E726D.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.30.19:007][377]LogMetaData: Removing '/Game/AgeofTiles/Buildings_Enum.Buildings_Enum' ref from Metadata '/Game/AgeofTiles/Building_Enum.PackageMetaData'
-[2019.01.26-04.30.19:026][377]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Buildings_Enum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset" SILENT=true
-[2019.01.26-04.30.19:034][377]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_EnumF7EE29E04B78DB3532AA168340A15D23.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset'
-[2019.01.26-04.30.19:242][377]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.30.19:395][377]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD143576C3475D381BF82163A7C491382E.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.30.22:016][680]LogAssetEditorManager: Opening Asset editor for UserDefinedEnum /Game/AgeofTiles/Buildings_Enum.Buildings_Enum
-[2019.01.26-04.30.25:657][ 11]LogSlate: Window 'Buildings_Enum' being destroyed
-[2019.01.26-04.33.35:482][180]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/AgeofTiles/Maps/RTSTestMap' took 0.036
-[2019.01.26-04.33.35:484][180]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AgeofTiles/UnitsEnum] ([1] browsable assets)...
-[2019.01.26-04.33.35:484][180]OBJ SavePackage: Finished generating thumbnails for package [/Game/AgeofTiles/UnitsEnum]
-[2019.01.26-04.33.35:491][180]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/UnitsEnum_Auto15208456B48D3A3BAEF95A1A77BAE42CF.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Autosaves/Game/AgeofTiles/UnitsEnum_Auto1.uasset'
-[2019.01.26-04.33.35:492][180]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AgeofTiles/Resources_Enum] ([1] browsable assets)...
-[2019.01.26-04.33.35:492][180]OBJ SavePackage: Finished generating thumbnails for package [/Game/AgeofTiles/Resources_Enum]
-[2019.01.26-04.33.35:498][180]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Enum_Auto12CD996184A870E3A8718FAB4CEA025EF.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Autosaves/Game/AgeofTiles/Resources_Enum_Auto1.uasset'
-[2019.01.26-04.33.35:499][180]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/AgeofTiles/Buildings_Enum] ([1] browsable assets)...
-[2019.01.26-04.33.35:499][180]OBJ SavePackage: Finished generating thumbnails for package [/Game/AgeofTiles/Buildings_Enum]
-[2019.01.26-04.33.35:543][180]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_Enum_Auto1ECD98A5D4D2A3FDA44647DB9E6CC1C3D.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Autosaves/Game/AgeofTiles/Buildings_Enum_Auto1.uasset'
-[2019.01.26-04.33.35:544][180]LogFileHelpers: Auto-saving content packages took 0.060
-[2019.01.26-04.35.43:837][329]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Buildings_Enum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset" SILENT=true
-[2019.01.26-04.35.43:882][329]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_EnumC2BBC41842AB33810B4ADD8C0D2868E8.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset'
-[2019.01.26-04.36.12:555][768]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Buildings_Enum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset" SILENT=true
-[2019.01.26-04.36.12:599][768]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_EnumDA36814B40A792FB8D9DD28BBF08A47C.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings_Enum.uasset'
-[2019.01.26-04.36.15:543][117]LogAssetEditorManager: Opening Asset editor for DataTable /Game/AgeofTiles/Units_Data.Units_Data
-[2019.01.26-04.36.19:215][544]LogSlate: Window 'Units_Data' being destroyed
-[2019.01.26-04.36.21:873][861]LogAssetEditorManager: Opening Asset editor for UserDefinedEnum /Game/AgeofTiles/UnitsEnum.UnitsEnum
-[2019.01.26-04.37.19:301][207]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/UnitsEnum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/UnitsEnum.uasset" SILENT=true
-[2019.01.26-04.37.19:308][207]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/UnitsEnum5D0E38E34D7C20B2B816AEB7DFBE220B.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/UnitsEnum.uasset'
-[2019.01.26-04.37.23:256][675]LogAssetEditorManager: Opening Asset editor for UserDefinedEnum /Game/AgeofTiles/Resources_Enum.Resources_Enum
-[2019.01.26-04.37.53:647][305]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Resources_Enum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Resources_Enum.uasset" SILENT=true
-[2019.01.26-04.37.53:654][305]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_EnumBBD173744BB5D8D8A721D0A43CD456CF.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Resources_Enum.uasset'
-[2019.01.26-04.37.59:409][991]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.38.22:765][698]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.38.41:949][996]LogAssetEditorManager: Opening Asset editor for UserDefinedEnum /Game/AgeofTiles/Resources_Enum.Resources_Enum
-[2019.01.26-04.38.49:837][930]LogAssetEditorManager: Opening Asset editor for UserDefinedStruct /Game/AgeofTiles/Structs/Resources_Struct.Resources_Struct
-[2019.01.26-04.38.58:696][979]LogSlate: Took 0.005065 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
-[2019.01.26-04.39.03:054][499]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.39.03:054][499]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.39.03:054][499]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.39.03:054][499]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.39.03:054][499]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.39.07:927][ 76]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Struct8271443D4C8B09BE4ABAA2B7F0D62E48.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Structs/Resources_Struct.uasset'
-[2019.01.26-04.39.13:087][687]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Struct6009E93143550F5371DA02B268E36702.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Structs/Resources_Struct.uasset'
-[2019.01.26-04.39.17:852][256]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.39.19:891][498]LogAssetEditorManager: Opening Asset editor for DataTable /Game/AgeofTiles/Resources_Data.Resources_Data
-[2019.01.26-04.39.47:878][847]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Resources_Data" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Resources_Data.uasset" SILENT=true
-[2019.01.26-04.39.47:925][847]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_DataA6742E2A4A6F68C0EED9CC9A33D41A11.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Resources_Data.uasset'
-[2019.01.26-04.40.24:926][279]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.40.26:824][503]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/AgeofTiles/HUDs/Main_HUD.Main_HUD
-[2019.01.26-04.40.27:432][503]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 117 classes and 0 folders.
-[2019.01.26-04.40.28:384][503]LogSlate: Took 0.004484 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2019.01.26-04.40.29:338][614]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.40.29:513][614]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.40.29:513][614]LogClass: Warning: Type mismatch in Name_2_6E4940AA4C0E2A35DEBBADB5AB49DA21 of Resources_Struct - Previous (NameProperty) Current(ByteProperty) for package:  FObjectReader
-[2019.01.26-04.41.15:320][ 28]LogSlate: Took 0.005197 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2019.01.26-04.41.16:219][136]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.41.16:914][195]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.41.17:055][195]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD69C7A5D749351E32ACD86FA75C733F74.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.41.19:476][482]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/AgeofTiles/HUDs/ResourceInfo_HUD.ResourceInfo_HUD
-[2019.01.26-04.42.09:823][425]BlueprintLog: New page: Compile ResourceInfo_HUD
-[2019.01.26-04.42.11:376][577]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/ResourceInfo_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset" SILENT=true
-[2019.01.26-04.42.11:443][577]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/ResourceInfo_HUD61C8DA8E44C20351540D4EB082B360D3.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset'
-[2019.01.26-04.42.12:027][645]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2019.01.26-04.42.12:054][645]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.12:054][645]BlueprintLog: New page: Pre-Play auto-recompile
-[2019.01.26-04.42.12:063][645]LogPlayLevel: [PlayLevel] Compiling Unit_Interface before play...
-[2019.01.26-04.42.12:066][645]LogPlayLevel: [PlayLevel]   Compiling BuildButton_HUD as a dependent...
-[2019.01.26-04.42.12:073][645]LogPlayLevel: [PlayLevel]   Compiling CameraPawnControllerController as a dependent...
-[2019.01.26-04.42.12:129][645]LogPlayLevel: [PlayLevel]   Compiling Main_HUD as a dependent...
-[2019.01.26-04.42.12:503][645]LogPlayLevel: PlayLevel: Blueprint regeneration took 449 ms (4 blueprints)
-[2019.01.26-04.42.12:503][645]PIE: New page: PIE session: RTSTestMap (26 Jan 2019 8:42:12 pm)
-[2019.01.26-04.42.12:504][645]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
-[2019.01.26-04.42.12:533][645]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028881s)
-[2019.01.26-04.42.12:533][645]LogAIModule: Creating AISystem for world RTSTestMap
-[2019.01.26-04.42.12:533][645]LogPlayLevel: PIE: World Init took: (0.000714s)
-[2019.01.26-04.42.12:533][645]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.029738s)
-[2019.01.26-04.42.12:588][645]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
-[2019.01.26-04.42.12:605][645]LogInit: FAudioDevice initialized.
-[2019.01.26-04.42.12:611][645]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.42.12:640][645]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.01.26-04.42.12:641][645]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.26-12.42.12
-[2019.01.26-04.42.12:641][645]LogWorld: Bringing up level for play took: 0.000927
-[2019.01.26-04.42.12:664][645]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap 1.435
-[2019.01.26-04.42.12:665][645]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.18:422][329]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.18:422][329]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.42.18:447][329]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.01.26-04.42.18:477][329]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.01.26-04.42.18:478][329]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.18:541][330]LogPlayLevel: Display: Destroying online subsystem :Context_6
-[2019.01.26-04.42.21:168][644]BlueprintLog: New page: Compile ResourceInfo_HUD
-[2019.01.26-04.42.21:182][644]LogBlueprint: Error: [Compiler ResourceInfo_HUD] Enum to String  has invalid enum value ''
-[2019.01.26-04.42.21:418][644]LogBlueprint: Warning: [Compiler ResourceInfo_HUD] [1358.96] Compile of ResourceInfo_HUD failed. 1 Fatal Issue(s) 0 Warning(s) [in 250 ms] (/Game/AgeofTiles/HUDs/ResourceInfo_HUD.ResourceInfo_HUD)
-[2019.01.26-04.42.26:014][192]BlueprintLog: New page: Compile ResourceInfo_HUD
-[2019.01.26-04.42.27:427][328]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2019.01.26-04.42.27:454][328]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.27:454][328]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.01.26-04.42.27:454][328]PIE: New page: PIE session: RTSTestMap (26 Jan 2019 8:42:27 pm)
-[2019.01.26-04.42.27:454][328]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
-[2019.01.26-04.42.27:483][328]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028357s)
-[2019.01.26-04.42.27:483][328]LogAIModule: Creating AISystem for world RTSTestMap
-[2019.01.26-04.42.27:484][328]LogPlayLevel: PIE: World Init took: (0.000649s)
-[2019.01.26-04.42.27:484][328]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.029142s)
-[2019.01.26-04.42.27:540][328]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
-[2019.01.26-04.42.27:556][328]LogInit: FAudioDevice initialized.
-[2019.01.26-04.42.27:561][328]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.42.27:590][328]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.01.26-04.42.27:591][328]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.26-12.42.27
-[2019.01.26-04.42.27:592][328]LogWorld: Bringing up level for play took: 0.001081
-[2019.01.26-04.42.27:615][328]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap 0.386
-[2019.01.26-04.42.27:615][328]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.29:591][558]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.29:592][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.42.29:616][558]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.01.26-04.42.29:647][558]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.01.26-04.42.29:648][558]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.42.29:710][559]LogPlayLevel: Display: Destroying online subsystem :Context_7
-[2019.01.26-04.42.34:531][136]BlueprintLog: New page: Compile ResourceInfo_HUD
-[2019.01.26-04.42.35:160][179]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/ResourceInfo_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset" SILENT=true
-[2019.01.26-04.42.35:220][179]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/ResourceInfo_HUDD2432D5B4CE9C530583382AF8541D885.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset'
-[2019.01.26-04.42.43:744][199]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/ResourceInfo_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset" SILENT=true
-[2019.01.26-04.42.43:804][199]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/ResourceInfo_HUDA2FD5FFA4D87F4586B5953A6B6465E6D.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset'
-[2019.01.26-04.43.30:759][758]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.43.31:314][803]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.43.31:449][803]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD80FD1CF04EFC982C8119E3AE4ADE0021.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.45.42:459][355]BlueprintLog: New page: Collapse to Macro
-[2019.01.26-04.46.26:336][576]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.46.26:979][632]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.46.27:128][632]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD4E86110A40E1894C5875BA9B75259BE9.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.47.46:167][ 58]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.48.13:557][315]BlueprintLog: New page: Compile Main_HUD
-[2019.01.26-04.48.14:221][372]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.48.14:369][372]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUDA8B995D14DCBB2D5C94C22833AD3BB4A.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.48.15:891][552]LogTemp: Repeating last play command: New Editor Window (PIE)
-[2019.01.26-04.48.15:934][552]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.48.15:934][552]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.01.26-04.48.15:934][552]PIE: New page: PIE session: RTSTestMap (26 Jan 2019 8:48:15 pm)
-[2019.01.26-04.48.15:934][552]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
-[2019.01.26-04.48.15:963][552]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028596s)
-[2019.01.26-04.48.15:963][552]LogAIModule: Creating AISystem for world RTSTestMap
-[2019.01.26-04.48.15:964][552]LogPlayLevel: PIE: World Init took: (0.000664s)
-[2019.01.26-04.48.15:964][552]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.029409s)
-[2019.01.26-04.48.16:021][552]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
-[2019.01.26-04.48.16:038][552]LogInit: FAudioDevice initialized.
-[2019.01.26-04.48.16:042][552]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.01.26-04.48.16:077][552]LogLoad: Game class is 'TopDownGameMode_C'
-[2019.01.26-04.48.16:078][552]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.26-12.48.16
-[2019.01.26-04.48.16:078][552]LogWorld: Bringing up level for play took: 0.000937
-[2019.01.26-04.48.16:102][552]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap 0.872
-[2019.01.26-04.48.16:102][552]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.48.18:927][884]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.01.26-04.48.19:038][895]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.01.26-04.48.19:044][895]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.48.19:079][895]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.01.26-04.48.19:080][895]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
-[2019.01.26-04.48.19:154][896]LogPlayLevel: Display: Destroying online subsystem :Context_8
-[2019.01.26-04.48.46:816][187]LogMetaData: Removing '/Game/AgeofTiles/Enumerators/UnitsEnum.UnitsEnum' ref from Metadata '/Game/AgeofTiles/UnitsEnum.PackageMetaData'
-[2019.01.26-04.48.46:834][187]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/Enumerators/UnitsEnum" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Enumerators/UnitsEnum.uasset" SILENT=true
-[2019.01.26-04.48.46:841][187]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/UnitsEnum302AC45E4E16402F14DE9D854E2C2B68.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Enumerators/UnitsEnum.uasset'
-[2019.01.26-04.48.51:370][679]LogMetaData: Removing '/Game/AgeofTiles/Enumerators/Buildings_Enum.Buildings_Enum' ref from Metadata '/Game/AgeofTiles/Buildings_Enum.PackageMetaData'
-[2019.01.26-04.48.51:383][679]LogMetaData: Removing '/Game/AgeofTiles/Enumerators/Resources_Enum.Resources_Enum' ref from Metadata '/Game/AgeofTiles/Resources_Enum.PackageMetaData'
-[2019.01.26-04.48.51:411][679]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_EnumF939A07A4B61CA450F2229B6BA33E4AD.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Enumerators/Buildings_Enum.uasset'
-[2019.01.26-04.48.51:422][679]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Enum1F334A8F482697872968AD9CFD6E5EC0.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Enumerators/Resources_Enum.uasset'
-[2019.01.26-04.48.51:799][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.48.51:940][679]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUDB5CB89404CDE63E48DC283B2F23B1D99.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.48.51:993][679]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Struct93C37A7B49D472EFD598EB8C1701D1E5.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Structs/Resources_Struct.uasset'
-[2019.01.26-04.48.51:999][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/ResourceInfo_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset" SILENT=true
-[2019.01.26-04.48.52:064][679]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/ResourceInfo_HUD5C4918464480A7036625AAACF09D5D96.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset'
-[2019.01.26-04.49.06:107][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_Data79E10387485F5AAD8D036CA8CD51E580.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/DataTables/Buildings_Data.uasset'
-[2019.01.26-04.49.06:119][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Resources_Data9A51200F466C071F91410C8CD292905F.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/DataTables/Resources_Data.uasset'
-[2019.01.26-04.49.06:123][320]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/DataTables/Units_Data" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/DataTables/Units_Data.uasset" SILENT=true
-[2019.01.26-04.49.06:130][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Units_Data0BB8BB0C4628588BE3532BA558CABB96.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/DataTables/Units_Data.uasset'
-[2019.01.26-04.49.06:702][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/TownCentreViking_Child32B5CB9484930C2A73C13D18E9673BE5F.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Buildings/Economy/TownCentre/Vikings/TownCentreViking_Child3.uasset'
-[2019.01.26-04.49.06:706][320]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
-[2019.01.26-04.49.06:849][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD0A3F6F2445C45CA2583753B54BEF29AD.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
-[2019.01.26-04.49.07:083][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/CameraPawnControllerController8E8E5C74456DEB42979B8AA12219BCB5.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Blueprints/CameraPawnControllerController.uasset'
-[2019.01.26-04.49.07:088][320]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/ResourceInfo_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset" SILENT=true
-[2019.01.26-04.49.07:147][320]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/ResourceInfo_HUD93340F4C4A46F1810D4BBFBBB2545A43.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/ResourceInfo_HUD.uasset'
-[2019.01.26-04.49.08:528][432]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap243B01D546B4A5703E294A8978389CD3.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap'
-[2019.01.26-04.49.08:690][432]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap_BuiltData63599C5142DCCCF70FE5A49DDB383EB9.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap_BuiltData.uasset'
-[2019.01.26-04.49.18:482][576]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap964A9B804317836F254EDF9D90EE93FE.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap'
-[2019.01.26-04.49.18:482][576]LogFileManager: Warning: DeleteFile was unable to delete '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap', retrying in .5s...
-[2019.01.26-04.49.18:984][576]LogFileManager: Warning: DeleteFile recovered during retry!
-[2019.01.26-04.49.19:109][576]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap_BuiltData5DD2F60043A497C394FAD684041EF2FB.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap_BuiltData.uasset'
+[2019.01.28-04.52.27:205][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.01.28-04.52.27:205][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:206][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:225][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:225][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.01.28-04.52.27:225][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.01.28-04.52.27:225][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:225][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.01.28-04.52.27:226][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.01.28-04.52.27:227][  0]LogInit: Selected Device Profile: [Windows]
+[2019.01.28-04.52.27:227][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.01.28-04.52.27:253][  0]LogHAL: Display: Platform has ~ 16 GB [17127763968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.01.28-04.52.27:254][  0]LogInit: Going up to parent DeviceProfile []
+[2019.01.28-04.52.27:254][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.01.28-04.52.27:254][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Scalability.ini]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.01.28-04.52.27:255][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.01.28-04.52.27:260][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.01.28-04.52.27:260][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Config/Windows/Engine.ini]
+[2019.01.28-04.52.27:264][  0]LogInit: Computer: DESKTOP-DRGIK0M
+[2019.01.28-04.52.27:264][  0]LogInit: User: mdmur
+[2019.01.28-04.52.27:264][  0]LogInit: CPU Page size=4096, Cores=8
+[2019.01.28-04.52.27:264][  0]LogInit: High frequency timer resolution =3.314084 MHz
+[2019.01.28-04.52.27:265][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2019.01.28-04.52.27:265][  0]LogMemory: Platform Memory Stats for Windows
+[2019.01.28-04.52.27:265][  0]LogMemory: Process Physical Memory: 105.21 MB used, 105.21 MB peak
+[2019.01.28-04.52.27:265][  0]LogMemory: Process Virtual Memory: 95.14 MB used, 95.14 MB peak
+[2019.01.28-04.52.27:265][  0]LogMemory: Physical Memory: 4816.57 MB used,  11517.73 MB free, 16334.31 MB total
+[2019.01.28-04.52.27:265][  0]LogMemory: Virtual Memory: 4684.65 MB used,  134213040.00 MB free, 134217728.00 MB total
+[2019.01.28-04.52.27:465][  0]LogInit: Using OS detected language (en-US).
+[2019.01.28-04.52.27:465][  0]LogInit: Using OS detected locale (en-AU).
+[2019.01.28-04.52.27:469][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.01.28-04.52.28:065][  0]LogStreaming: Display: Took  0.599s to InitEngineTextLocalization.
+[2019.01.28-04.52.28:065][  0]LogInit: Setting process to per monitor DPI aware
+[2019.01.28-04.52.28:187][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.01.28-04.52.28:187][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.01.28-04.52.30:679][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2019.01.28-04.52.30:679][  0]LogD3D11RHI: D3D11 adapters:
+[2019.01.28-04.52.30:782][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070 Ti' (Feature Level 11_0)
+[2019.01.28-04.52.30:783][  0]LogD3D11RHI:       8080/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2019.01.28-04.52.30:785][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.01.28-04.52.30:785][  0]LogD3D11RHI:       0/0/8167 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.01.28-04.52.30:785][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.01.28-04.52.30:796][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.01.28-04.52.30:796][  0]LogD3D11RHI:     GPU DeviceId: 0x1b82 (for the marketing name, search the web for "GPU Device Id")
+[2019.01.28-04.52.30:796][  0]LogWindows: EnumDisplayDevices:
+[2019.01.28-04.52.30:796][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070 Ti' (P:1 D:1)
+[2019.01.28-04.52.30:796][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:1)
+[2019.01.28-04.52.30:797][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:1)
+[2019.01.28-04.52.30:797][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
+[2019.01.28-04.52.30:797][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.01.28-04.52.30:797][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070 Ti
+[2019.01.28-04.52.30:797][  0]LogD3D11RHI:   Driver Version: 417.22 (internal:25.21.14.1722, unified:417.22)
+[2019.01.28-04.52.30:797][  0]LogD3D11RHI:      Driver Date: 11-29-2018
+[2019.01.28-04.52.30:797][  0]LogRHI: Texture pool is 5656 MB (70% of 8080 MB)
+[2019.01.28-04.52.30:852][  0]LogD3D11RHI: Async texture creation enabled
+[2019.01.28-04.52.30:900][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.01.28-04.52.31:371][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.01.28-04.52.31:390][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.01.28-04.52.31:408][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.01.28-04.52.31:426][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.01.28-04.52.31:449][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.01.28-04.52.31:472][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.01.28-04.52.31:491][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.01.28-04.52.31:520][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.01.28-04.52.31:529][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:637][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.01.28-04.52.31:640][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.01.28-04.52.31:721][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.01.28-04.52.31:721][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.01.28-04.52.31:754][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.01.28-04.52.31:754][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.01.28-04.52.31:776][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.01.28-04.52.31:861][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.01.28-04.52.31:880][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.01.28-04.52.31:911][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.01.28-04.52.31:981][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.01.28-04.52.31:981][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.01.28-04.52.31:981][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.01.28-04.52.32:177][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Intermediate/Shaders/WorkingDirectory/26668/).
+[2019.01.28-04.52.32:177][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/mdmur/AppData/Local/Temp/UnrealShaderWorkingDir/F867324E4490FCB1C823CC84ADDEC55F/'.
+[2019.01.28-04.52.32:181][  0]LogXGEController: Cleaning working directory: C:/Users/mdmur/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.01.28-04.52.32:181][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.01.28-04.52.32:181][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.01.28-04.52.32:181][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.01.28-04.52.34:064][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: Loaded boot cache 0.18s 71MB C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.01.28-04.52.34:246][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.01.28-04.52.34:268][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.01.28-04.52.34:269][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.01.28-04.52.34:269][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.01.28-04.52.34:281][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mdmur/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.01.28-04.52.34:281][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.01.28-04.52.34:281][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.01.28-04.52.34:307][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.01.28-04.52.34:312][  0]LogSlate: Using FreeType 2.6.0
+[2019.01.28-04.52.34:332][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.01.28-04.52.34:614][  0]LogAssetRegistry: FAssetRegistry took 0.0383 seconds to start up
+[2019.01.28-04.52.35:046][  0]LogInit: Selected Device Profile: [Windows]
+[2019.01.28-04.52.35:280][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.01.28-04.52.35:298][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.01.28-04.52.35:298][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.01.28-04.52.35:298][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.01.28-04.52.35:299][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.01.28-04.52.35:442][  0]LogNetVersion: AgeofTiles 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2632728394)
+[2019.01.28-04.52.36:765][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.136638 seconds
+[2019.01.28-04.52.36:773][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2019.01.28-04.52.36:773][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
+[2019.01.28-04.52.36:773][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.01.28-04.52.40:179][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.01.28-04.52.40:195][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.01.28-04.52.41:142][  0]SourceControl: Source control is disabled
+[2019.01.28-04.52.41:142][  0]SourceControl: Source control is disabled
+[2019.01.28-04.52.41:155][  0]SourceControl: Source control is disabled
+[2019.01.28-04.52.41:159][  0]SourceControl: Source control is disabled
+[2019.01.28-04.52.41:643][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.01.28-04.52.41:777][  0]LogOcInput: OculusInput pre-init called
+[2019.01.28-04.52.41:990][  0]LogEngine: Initializing Engine...
+[2019.01.28-04.52.42:022][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2019.01.28-04.52.42:025][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.01.28-04.52.42:025][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.01.28-04.52.42:025][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.01.28-04.52.42:026][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.01.28-04.52.42:503][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.01.28-04.52.42:565][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.01.28-04.52.42:596][  0]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
+[2019.01.28-04.52.42:647][  0]LogInit: FAudioDevice initialized.
+[2019.01.28-04.52.42:647][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.01.28-04.52.42:745][  0]LogDerivedDataCache: Saved boot cache 0.10s 71MB C:/Users/mdmur/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.01.28-04.52.42:757][  0]LogInit: Texture streaming: Enabled
+[2019.01.28-04.52.42:783][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.01.28-04.52.42:811][  0]LogInit: Transaction tracking system initialized
+[2019.01.28-04.52.42:875][  0]BlueprintLog: New page: Editor Load
+[2019.01.28-04.52.43:071][  0]LocalizationService: Localization service is disabled
+[2019.01.28-04.52.43:446][  0]LogLinker: Warning: Can't find file '/Game/TopDownBP/TopDownOverview'
+[2019.01.28-04.52.43:447][  0]LogLinker: Warning: Can't find file '/Game/TopDownBP/TopDownOverview'
+[2019.01.28-04.52.43:447][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/TopDownBP/TopDownOverview.TopDownOverview_C'
+[2019.01.28-04.52.44:013][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/' took 0.03s
+[2019.01.28-04.52.44:014][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.01.28-04.52.44:014][  0]LogCook: Display: Mobile HDR setting 1
+[2019.01.28-04.52.44:014][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.01.28-04.52.44:014][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.01.28-04.52.44:014][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.01.28-04.52.44:014][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.01.28-04.52.44:014][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.01.28-04.52.44:376][  0]SourceControl: Source control is disabled
+[2019.01.28-04.52.44:377][  0]Cmd: MAP LOAD FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.01.28-04.52.44:378][  0]LightingResults: New page: Lighting Build
+[2019.01.28-04.52.44:388][  0]MapCheck: New page: Map Check
+[2019.01.28-04.52.44:388][  0]LightingResults: New page: Lighting Build
+[2019.01.28-04.52.45:517][  0]LogAIModule: Creating AISystem for world RTSTestMap
+[2019.01.28-04.52.45:567][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.01.28-04.52.45:612][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.01.28-04.52.45:612][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.186ms to complete.
+[2019.01.28-04.52.45:612][  0]LogFileHelpers: Loading map 'RTSTestMap' took 1.236
+[2019.01.28-04.52.45:767][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.52.45:776][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.52.45:786][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.52.45:795][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.52.45:814][  0]LogCollectionManager: Loaded 0 collections in 0.002234 seconds
+[2019.01.28-04.52.45:855][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Collections/' took 0.01s
+[2019.01.28-04.52.45:855][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/Developers/mdmur/Collections/' took 0.01s
+[2019.01.28-04.52.45:855][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/Collections/' took 0.00s
+[2019.01.28-04.52.45:855][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.01.28-04.52.45:869][  0]LogContentBrowser: Native class hierarchy populated in 0.0126 seconds. Added 2652 classes and 622 folders.
+[2019.01.28-04.52.45:882][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.01.28-04.52.45:892][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:899][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:927][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:932][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:938][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:943][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:949][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:955][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:961][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:968][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:973][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:978][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:985][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:991][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.45:996][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:003][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:039][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:045][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:051][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:056][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:103][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:120][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:129][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:136][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:143][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:148][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.01.28-04.52.46:331][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.01.28-04.52.46:343][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2019.01.28-04.52.46:498][  0]LogSlate: Took 0.006307 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.01.28-04.52.46:505][  0]LogSlate: Took 0.005801 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.01.28-04.52.46:517][  0]LogSlate: Took 0.005287 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.01.28-04.52.46:666][  0]LogRenderer: Reallocating scene render targets to support 1208x600 Format 10 NumSamples 1 (Frame:1).
+[2019.01.28-04.52.46:811][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.01.28-04.52.46:811][  0]LogLoad: (Engine Initialization) Total time: 25.28 seconds
+[2019.01.28-04.52.46:811][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.01.28-04.52.46:876][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.01.28-04.52.46:913][  0]LogSlate: Took 0.005975 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.01.28-04.52.47:175][  4]LogAssetRegistry: Asset discovery search completed in 12.5839 seconds
+[2019.01.28-04.52.47:177][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.01.28-04.52.47:177][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000067 seconds (updated 0 objects)
+[2019.01.28-04.52.48:164][  7]LogSlate: Took 0.000194 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.01.28-04.54.38:372][699]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.54.38:500][710]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/AgeofTiles/MacroLibrary/Calculations.Calculations
+[2019.01.28-04.54.39:141][710]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 117 classes and 0 folders.
+[2019.01.28-04.54.46:882][516]LogSlate: Took 0.004743 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.01.28-04.54.54:203][319]LogSlate: Window 'Calculations' being destroyed
+[2019.01.28-04.54.55:277][441]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.55.01:213][ 34]LogSlate: Window 'Delete Assets' being destroyed
+[2019.01.28-04.55.02:908][169]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap87998CC847658D51D96D39B10B0E9770.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap.umap'
+[2019.01.28-04.55.03:133][169]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/RTSTestMap_BuiltDataF9FE013C4F592B06E76E1CAFEBE44D12.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/Maps/RTSTestMap_BuiltData.uasset'
+[2019.01.28-04.55.04:191][294]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.01.28-04.55.04:211][294]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.55.04:211][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.01.28-04.55.04:212][294]PIE: New page: PIE session: RTSTestMap (28 Jan 2019 8:55:04 pm)
+[2019.01.28-04.55.04:226][294]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
+[2019.01.28-04.55.04:259][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032477s)
+[2019.01.28-04.55.04:260][294]LogAIModule: Creating AISystem for world RTSTestMap
+[2019.01.28-04.55.04:260][294]LogPlayLevel: PIE: World Init took: (0.000624s)
+[2019.01.28-04.55.04:260][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.033710s)
+[2019.01.28-04.55.04:313][294]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
+[2019.01.28-04.55.04:332][294]LogInit: FAudioDevice initialized.
+[2019.01.28-04.55.04:337][294]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.55.04:380][294]LogLoad: Game class is 'TopDownGameMode_C'
+[2019.01.28-04.55.04:383][294]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.28-12.55.04
+[2019.01.28-04.55.04:386][294]LogWorld: Bringing up level for play took: 0.004009
+[2019.01.28-04.55.04:408][294]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
+[2019.01.28-04.55.04:427][294]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap -0.764
+[2019.01.28-04.55.04:427][294]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.55.04:476][294]LogRenderer: Reallocating scene render targets to support 1292x756 Format 10 NumSamples 1 (Frame:1).
+[2019.01.28-04.55.07:332][629]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 10 NumSamples 1 (Frame:337).
+[2019.01.28-04.55.24:636][702]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.55.24:686][708]LogBlueprintUserMessages: [Main_HUD_C_0] Worker
+[2019.01.28-04.55.29:228][253]LogBlueprintUserMessages: [Main_HUD_C_0] Warrior
+[2019.01.28-04.55.30:660][425]LogBlueprintUserMessages: [Main_HUD_C_0] TownCentreUpgrade
+[2019.01.28-04.55.32:911][695]LogBlueprintUserMessages: [Main_HUD_C_0] HouseUpgrade
+[2019.01.28-04.55.35:661][ 25]LogBlueprintUserMessages: [Main_HUD_C_0] TownCentre
+[2019.01.28-04.55.42:004][786]LogBlueprintUserMessages: [CameraPawnControllerController_C_0] TownCentre Has been spawned
+[2019.01.28-04.56.45:804][433]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.01.28-04.56.45:808][433]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.56.45:839][433]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.01.28-04.56.45:840][433]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.56.45:898][434]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2019.01.28-04.56.51:230][ 68]LogAssetEditorManager: Opening Asset editor for DataTable /Game/AgeofTiles/DataTables/Buildings_Data.Buildings_Data
+[2019.01.28-04.57.40:193][923]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Buildings_DataAE213DA64BB37CA2459A9AA3523B99BD.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/DataTables/Buildings_Data.uasset'
+[2019.01.28-04.57.41:472][ 76]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.01.28-04.57.41:493][ 76]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.57.41:493][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.01.28-04.57.41:493][ 76]PIE: New page: PIE session: RTSTestMap (28 Jan 2019 8:57:41 pm)
+[2019.01.28-04.57.41:493][ 76]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
+[2019.01.28-04.57.41:522][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029350s)
+[2019.01.28-04.57.41:523][ 76]LogAIModule: Creating AISystem for world RTSTestMap
+[2019.01.28-04.57.41:523][ 76]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2019.01.28-04.57.41:523][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.030222s)
+[2019.01.28-04.57.41:577][ 76]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
+[2019.01.28-04.57.41:597][ 76]LogInit: FAudioDevice initialized.
+[2019.01.28-04.57.41:634][ 76]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.57.41:667][ 76]LogLoad: Game class is 'TopDownGameMode_C'
+[2019.01.28-04.57.41:668][ 76]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.28-12.57.41
+[2019.01.28-04.57.41:668][ 76]LogWorld: Bringing up level for play took: 0.000926
+[2019.01.28-04.57.41:693][ 76]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap 0.502
+[2019.01.28-04.57.41:693][ 76]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.57.48:097][837]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.57.52:147][323]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.57.52:780][399]LogBlueprintUserMessages: [Main_HUD_C_0] Warrior
+[2019.01.28-04.57.53:364][469]LogBlueprintUserMessages: [Main_HUD_C_0] Worker
+[2019.01.28-04.57.54:238][574]LogBlueprintUserMessages: [Main_HUD_C_0] TownCentreUpgrade
+[2019.01.28-04.57.57:008][904]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.01.28-04.57.57:011][904]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.57.57:042][904]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.01.28-04.57.57:043][904]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.57.57:119][905]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2019.01.28-04.58.32:415][133]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/AgeofTiles/HUDs/Main_HUD.Main_HUD
+[2019.01.28-04.58.34:947][375]LogSlate: Took 0.013406 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2019.01.28-04.58.41:664][169]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.01.28-04.58.41:688][169]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.58.41:688][169]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.01.28-04.58.41:688][169]PIE: New page: PIE session: RTSTestMap (28 Jan 2019 8:58:41 pm)
+[2019.01.28-04.58.41:688][169]LogPlayLevel: Creating play world package: /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap
+[2019.01.28-04.58.41:718][169]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030309s)
+[2019.01.28-04.58.41:719][169]LogAIModule: Creating AISystem for world RTSTestMap
+[2019.01.28-04.58.41:719][169]LogPlayLevel: PIE: World Init took: (0.000694s)
+[2019.01.28-04.58.41:719][169]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap to /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap (0.031155s)
+[2019.01.28-04.58.41:781][169]LogInit: XAudio2 using 'Speakers / Headphones (Plantronics HD1)' : 6 channels at 48 kHz using 24 bits per sample (channel mask 0x3f)
+[2019.01.28-04.58.41:801][169]LogInit: FAudioDevice initialized.
+[2019.01.28-04.58.41:825][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.01.28-04.58.41:858][169]LogLoad: Game class is 'TopDownGameMode_C'
+[2019.01.28-04.58.41:859][169]LogWorld: Bringing World /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap.RTSTestMap up for play (max tick rate 0) at 2019.01.28-12.58.41
+[2019.01.28-04.58.41:859][169]LogWorld: Bringing up level for play took: 0.000850
+[2019.01.28-04.58.41:883][169]PIE: Play in editor start time for /Game/AgeofTiles/Maps/UEDPIE_0_RTSTestMap 0.692
+[2019.01.28-04.58.41:883][169]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.58.45:104][545]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.01.28-04.58.47:436][814]LogSlate: Window 'AgeofTiles Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.01.28-04.58.47:439][814]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.58.47:471][814]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.01.28-04.58.47:472][814]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel' has LevelScriptBlueprint '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap' with GeneratedClass '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap_C' with ClassGeneratedBy '/Game/AgeofTiles/Maps/RTSTestMap.RTSTestMap:PersistentLevel.RTSTestMap'
+[2019.01.28-04.58.47:523][815]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.01.28-04.58.49:658][ 52]LogSlate: Took 0.004973 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.01.28-05.00.12:881][869]LogSlate: Took 0.004735 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2019.01.28-05.02.30:199][162]BlueprintLog: New page: Compile Main_HUD
+[2019.01.28-05.02.31:050][223]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/AgeofTiles/HUDs/Main_HUD" FILE="../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset" SILENT=true
+[2019.01.28-05.02.31:295][223]LogSavePackage: Moving '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Saved/Main_HUD3A3B8BD9414F8A1DC4DBC085079D8ECC.tmp' to '../../../../../../Users/mdmur/Documents/Unreal Projects/AgeOfTiles/Content/AgeofTiles/HUDs/Main_HUD.uasset'
+[2019.01.28-05.07.05:303][ 87]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/AgeofTiles/Maps/RTSTestMap' took 0.040
+[2019.01.28-06.16.51:158][181]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
